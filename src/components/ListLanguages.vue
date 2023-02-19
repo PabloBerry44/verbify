@@ -29,7 +29,7 @@ watch(query, () => {
    width: 100%;
    height: 100vh;
    height: 100dvh;
-   z-index: 0;
+   z-index: 2;
    backdrop-filter: blur(5px);
    -webkit-backdrop-filter: blur(5px);
    display: flex;
