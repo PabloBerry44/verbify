@@ -61,13 +61,17 @@ watch(
          <div class="topbar">
             <CustomButton class="text icon" @click="handleShowList('source')">
                <span>{{ state.sourceLang.name }}</span>
-               <img src="@/assets/icons/expand_more_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
+               <img width="30" height="30" src="@/assets/icons/expand_more_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
             </CustomButton>
-            <CustomButton class="icon invert-icon" @click="switchLanguages()">
-               <img src="@/assets/icons/compare_arrows_FILL0_wght400_GRAD0_opsz48.svg" alt="switch languages" />
+            <CustomButton class="icon" @click="switchLanguages()">
+               <img
+                  width="30"
+                  height="30"
+                  src="@/assets/icons/compare_arrows_FILL0_wght400_GRAD0_opsz48.svg"
+                  alt="switch languages" />
             </CustomButton>
             <CustomButton class="text icon" @click="handleShowList('target')">
-               <img src="@/assets/icons/expand_more_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
+               <img width="30" height="30" src="@/assets/icons/expand_more_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
                <span>{{ state.targetLang.name }}</span>
             </CustomButton>
             <ListLanguages
@@ -77,17 +81,17 @@ watch(
          </div>
          <div class="text-fields-container">
             <form action="." @submit.prevent="fetchData()">
-               <textarea
-                  role="input"
-                  class="text-field"
-                  v-model="state.queryText"
-                  placeholder="Hello world..."></textarea>
+               <textarea class="text-field" v-model="state.queryText" placeholder="Hello world..."></textarea>
             </form>
             <div class="text-field" v-if="state.translation && state.queryText">{{ state.translation }}</div>
             <div class="text-field placeholder" v-else>Translation</div>
             <CustomButton style="width: 100%" class="text icon" @click="fetchData()">
                <span>Translate</span>
-               <img src="@/assets/icons/language_FILL0_wght400_GRAD0_opsz48.svg" alt="translate" />
+               <img
+                  width="30"
+                  height="30"
+                  src="@/assets/icons/language_FILL0_wght300_GRAD0_opsz48.svg"
+                  alt="translate" />
             </CustomButton>
          </div>
       </main>
@@ -140,7 +144,7 @@ main {
       resize: none;
       background-color: var(--bg-2);
       width: 100%;
-      padding: 10px;
+      padding: 20px;
       font-size: 20px;
       border-radius: 10px;
       height: 200px;

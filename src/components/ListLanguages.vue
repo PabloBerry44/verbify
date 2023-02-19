@@ -40,7 +40,7 @@ ul {
    list-style: none;
    display: grid;
    grid-template-columns: 1fr;
-   background-color: var(--bg-1);
+   background-color: var(--bg-3);
    width: 100%;
    overflow-y: scroll;
    top: calc(100% + 10px);

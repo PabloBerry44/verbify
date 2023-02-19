@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
-
-:root {
-  --blue-1: rgb(50, 163, 255);
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -11,6 +7,8 @@
       --bg-3: rgb(45, 45, 45);
       --bg-4: rgb(60, 60, 60);
       --bg-5:rgb(75, 75, 75);
+
+      --blue-1: rgb(0, 81, 158);
 
       --txt-1: rgb(255, 255, 255);
       --txt-2: rgb(225, 225, 225);
@@ -30,6 +28,8 @@
     --bg-3: rgb(225, 225, 225);
     --bg-4: rgb(210, 210, 210);
     --bg-5:rgb(195, 195, 195);
+
+    --blue-1: rgb(184, 221, 255);
 
     --txt-1: rgb(0, 0, 0);
     --txt-2: rgb(30, 30, 30);
@@ -63,6 +63,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
 
   display: flex;
   justify-content: center;
