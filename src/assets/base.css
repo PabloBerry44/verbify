@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 
+:root {
+  --blue-1: rgb(50, 163, 255);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
       --bg-1: rgb(15, 15, 15);
@@ -59,9 +63,15 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  justify-content: center;
 }
 
 #app {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
